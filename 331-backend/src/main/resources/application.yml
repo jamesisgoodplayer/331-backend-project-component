@@ -1,7 +1,6 @@
 spring:
   profiles:
     active:
-      - organizer
       - db
   application:
     name: 331-backend
@@ -15,4 +14,4 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-drop
