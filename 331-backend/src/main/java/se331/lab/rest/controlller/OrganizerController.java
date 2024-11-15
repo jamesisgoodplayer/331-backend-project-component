@@ -13,6 +13,8 @@ public class OrganizerController {
     final OrganizerService organizerService;
     @GetMapping("/organizers")
     ResponseEntity<?> getOrganizers(){
-             return ResponseEntity.ok(LabMapper.INSTANCE.getOrganizerDTO(organizerService.getAllOrganizer()));
+             return ResponseEntity.ok(LabMapper.INSTANCE.getOrganizerDTO(organizerService.getAllOrganizer())
+
+             );
          }
 }
